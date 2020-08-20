@@ -7,21 +7,27 @@
     <groupId>org.example</groupId>
     <artifactId>kafka_example</artifactId>
     <version>1.0</version>
+    <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kafka.version>2.4.1</kafka.version>
+        <mysql.version>8.0.18</mysql.version>
+        <gson.version>2.8.6</gson.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
-            <version>2.4.1</version>
+            <version>${kafka.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.18</version>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.8.6</version>
+            <version>${gson.version}</version>
         </dependency>
     </dependencies>
     <build>
